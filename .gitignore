@@ -1,4 +1,4 @@
-pkg/
+pkg/*
 
 ## MAC OS
 .DS_Store
