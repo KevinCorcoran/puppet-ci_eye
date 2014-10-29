@@ -37,5 +37,8 @@
 #
 class ci_eye {
 
+  notify { "CI-eye module activated." : }
 
+  # Or maybe use anchor pattern ... but it's just for compat with old versions?
+  contain ci_eye::install
 }
