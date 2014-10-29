@@ -1,3 +1,5 @@
+pkg/
+
 ## MAC OS
 .DS_Store
 
@@ -13,3 +15,4 @@ tmtags
 ## VIM
 *.swp
 tags
+
