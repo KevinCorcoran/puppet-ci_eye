@@ -4,9 +4,9 @@
   "author": "KevinCorcoran",
   "summary": "Manage a CI-eye build radiator - http://netmelody.org/ci-eye/",
   "license": "Apache 2.0",
-  "source": "http://www.github.com/KevinCorcoran, eventually",
+  "source": "https://github.com/KevinCorcoran/puppet-ci_eye",
   "project_page": null,
-  "issues_url": null,
+  "issues_url": "https://github.com/KevinCorcoran/puppet-ci_eye/issues",
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
   ]
