@@ -39,6 +39,23 @@ class ci_eye {
 
   notify { "CI-eye module activated." : }
 
-  # Or maybe use anchor pattern ... but it's just for compat with old versions?
-  contain ci_eye::install
+  anchor { 'ci_eye::begin': } ->
+  class { '::ci_eye::install': } ->
+  class { '::ci_eye::config': } ~>
+  class { '::ci_eye::service': } ->
+  anchor { 'ci_eye::end': }
+
+  # This form of anchoring was suggested by the docs at ...
+  #   https://docs.puppetlabs.com/guides/module_guides/bgtm.html
+  # but it caused an error:
+  #   "Could not find resource 'Class[Ci_eye::Install]' for relationship from 'Anchor[ci_eye::begin]'"
+
+#  anchor { 'ci_eye::begin' : }
+#  anchor { 'ci_eye::end' : }
+#
+#  Anchor['ci_eye::begin'] ->
+#    Class['ci_eye::install'] ->
+#    Class['ci_eye::config']  ->
+#    Class['ci_eye::service'] ->
+#  Anchor['ci_eye::end']
 }
