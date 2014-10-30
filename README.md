@@ -6,12 +6,11 @@
 2. [Module Description - What the module does and why it is useful](#module-description)
 3. [Setup - The basics of getting started with ci_eye](#setup)
     * [What ci_eye affects](#what-ci_eye-affects)
-    * [Setup requirements](#setup-requirements)
     * [Beginning with ci_eye](#beginning-with-ci_eye)
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#development)
+5. [Compatibility - OS compatibility, etc.](#compatibility)
+6. [TODO](#todo)
 
 ## Overview
 
@@ -58,5 +57,10 @@ with things. (We are working on automating this section!)
 
 ## Compatibility
 
-* >= Puppet 3.4.0
-* >= Puppet Enterprise 3.2
+Who knows?
+
+## TODO
+
+* java dependency
+* manage (start/stop) process
+* manage config
