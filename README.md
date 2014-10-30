@@ -64,3 +64,4 @@ Who knows?
 * java dependency
 * manage (start/stop) process
 * manage config
+* figure out how to use forge's changelog

@@ -1,4 +1,5 @@
 class ci_eye::install inherits ci_eye {
+
   notify { "Installing CI-eye..." : }
 
   # TODO handle existing file, overwrite?  version upgrade?

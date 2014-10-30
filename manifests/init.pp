@@ -37,7 +37,7 @@
 #
 class ci_eye {
 
-  notify { "CI-eye module activated." : }
+  notify { "CI-eye module initiated." : }
 
   anchor { 'ci_eye::begin': } ->
   class { '::ci_eye::install': } ->
