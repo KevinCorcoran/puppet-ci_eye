@@ -61,7 +61,9 @@ Who knows?
 
 ## TODO
 
-* java dependency
-* manage (start/stop) process
-* manage config
-* figure out how to use forge's changelog
+* manage CI-eye config, ensure service refresh on config change - only need to refresh on certain ones!  "Unless otherwise mentioned, updates to these files will not require the CI-Eye server to be restarted"
+* doc clean up (see also init.pp)
+* release
+* do something around stopping the service?
+* look into utilizing additional params on https://github.com/Spredzy/puppet-java-service-wrapper/blob/master/manifests/service.pp
+* (spec) tests?
