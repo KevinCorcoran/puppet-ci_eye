@@ -34,6 +34,7 @@
 class ci_eye (
   $port         = $ci_eye::params::port,
   $install_dir  = $ci_eye::params::install_dir,
+  $views        = $ci_eye::params::views,
 ) inherits ci_eye::params {
   anchor { 'ci_eye::begin': } ->
   class { '::ci_eye::install': } ->

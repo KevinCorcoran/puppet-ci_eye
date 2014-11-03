@@ -57,13 +57,13 @@ with things. (We are working on automating this section!)
 
 ## Compatibility
 
-Who knows?
+It seems to work fine on CentOS 6, and I've yet to test it on anything else.
 
 ## TODO
 
-* manage CI-eye config, ensure service refresh on config change - only need to refresh on certain ones!  "Unless otherwise mentioned, updates to these files will not require the CI-Eye server to be restarted"
-* doc clean up (see also init.pp)
+* doc clean up (esp. init.pp)
 * release
-* do something around stopping the service?
-* look into utilizing additional params on https://github.com/Spredzy/puppet-java-service-wrapper/blob/master/manifests/service.pp
-* (spec) tests?
+* Add config handling for username/password for secured CI servers.  See
+  https://github.com/netmelody/ci-eye/wiki/Configuration#access-to-secured-ci-servers
+* I've considered adding config management for pictures.txt, although it's not
+  clear to me that it would be useful.

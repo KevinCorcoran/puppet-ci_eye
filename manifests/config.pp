@@ -1,3 +1,7 @@
 class ci_eye::config inherits ci_eye {
-  # TODO this class is empty ...
+
+  file { '/root/.ci-eye/views.txt' :
+    ensure => present,
+    content => build_ci_eye_config($views),
+  }
 }
