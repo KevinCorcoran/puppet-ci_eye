@@ -1,6 +1,6 @@
 {
   "name": "KevinCorcoran-ci_eye",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "author": "KevinCorcoran",
   "summary": "Manage a CI-eye build radiator - http://netmelody.org/ci-eye/",
   "license": "Apache 2.0",
