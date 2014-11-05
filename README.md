@@ -44,19 +44,18 @@ You can configure the views displayed by CI-eye by setting a class parameter on
 the `ci_eye` class:
 ```puppet
 class { 'ci_eye' :
-    views = [{ name => "Puppet Labs",
-               projects => [{ type => 'JENKINS',
-                              url => 'https://jenkins.puppetlabs.com',
-                              name => 'Clojure Projects' },
-                            { type => 'JENKINS',
-                              url => 'https://jenkins.puppetlabs.com',
-                              name => 'PuppetDB' }] },
-             { name => 'Your awesome view',
-               projects => [{ type => 'JENKINS',
-                              url => 'http://your-jenkins-server.com',
-                              url => 'http://teamcity.codebetter.com',
-                              name => 'Amazing Code' }] }]
-
+  views => [{ name => "Puppet Labs",
+              projects => [{ type => 'JENKINS',
+                             url => 'https://jenkins.puppetlabs.com',
+                             name => 'Clojure Projects' },
+                           { type => 'JENKINS',
+                             url => 'https://jenkins.puppetlabs.com',
+                             name => 'PuppetDB' }] },
+            { name => 'Your awesome view',
+              projects => [{ type => 'JENKINS',
+                             url => 'http://your-jenkins-server.com',
+                             url => 'http://teamcity.codebetter.com',
+                             name => 'Amazing Code' }] }]
 }
 ```
 
