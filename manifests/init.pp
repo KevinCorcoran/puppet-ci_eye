@@ -1,35 +1,22 @@
 # == Class: ci_eye
 #
-# Full description of class ci_eye here.
+# Entry point into the CI-eye module.
 #
 # === Parameters
 #
-# Document parameters here.
+# [*port*]
+#   The port on which the CI-eye server will listen.  Defaults to 55555.
 #
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
-#   e.g. "Specify one or more upstream ntp servers as an array."
+# [*install_dir*]
+#   The directory to which CI-eye will be installed.  Defaults to `/opt/ci-eye`.
 #
-# === Variables
-#
-# Here you should define a list of variables that this module would require.
-#
-# [*sample_variable*]
-#   Explanation of how this variable affects the funtion of this class and if
-#   it has a default. e.g. "The parameter enc_ntp_servers must be set by the
-#   External Node Classifier as a comma separated list of hostnames." (Note,
-#   global variables should be avoided in favor of class parameters as
-#   of Puppet 2.6.)
-#
-# === Examples
-#
-#  class { 'ci_eye':
-#    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
-#  }
+# [*views*]
+#   Configuration defining the views/projects to be displayed by CI-eye.
+#   See the README for more documentation.
 #
 # === Authors
 #
-# Author Name <kevin.corcoran@puppetlabs.com>
+# Kevin Corcoran <kevin.corcoran@puppetlabs.com>
 #
 class ci_eye (
   $port         = $ci_eye::params::port,
